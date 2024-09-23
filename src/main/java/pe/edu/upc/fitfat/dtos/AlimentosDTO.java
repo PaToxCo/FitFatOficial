@@ -1,5 +1,8 @@
 package pe.edu.upc.fitfat.dtos;
 
+import pe.edu.upc.fitfat.entities.Dieta;
+import pe.edu.upc.fitfat.entities.Receta;
+
 public class AlimentosDTO {
     private int idAlimentos;
     private String nombre;
@@ -7,8 +10,8 @@ public class AlimentosDTO {
     private Double proteinas;
     private Double carbohidratos;
     private Double grasas;
-    private int dietaId;
-    private int recetaId;
+    private Dieta dieta;
+    private Receta receta;
 
     // Getters y Setters
 
@@ -60,19 +63,19 @@ public class AlimentosDTO {
         this.grasas = grasas;
     }
 
-    public int getDietaId() {
-        return dietaId;
+    public Dieta getDieta() {
+        return dieta;
     }
 
-    public void setDietaId(int dietaId) {
-        this.dietaId = dietaId;
+    public void setDieta(Dieta dieta) {
+        this.dieta = dieta;
     }
 
-    public int getRecetaId() {
-        return recetaId;
+    public Receta getReceta() {
+        return receta;
     }
 
-    public void setRecetaId(int recetaId) {
-        this.recetaId = recetaId;
+    public void setReceta(Receta receta) {
+        this.receta = receta;
     }
 }
