@@ -1,5 +1,8 @@
 package pe.edu.upc.fitfat.dtos;
 
+import pe.edu.upc.fitfat.entities.Tipo_comida;
+import pe.edu.upc.fitfat.entities.Usuarios;
+
 public class ComidaDTO {
     private int idComida;
     private String nombre;
@@ -9,8 +12,8 @@ public class ComidaDTO {
     private Integer grasas;
     private String descripcion;
     private Boolean comiFavo;
-    private int usuarioId;
-    private int tipoComidaId;
+    private Usuarios usuario;
+    private Tipo_comida tipoComida;
 
     // Getters and Setters
     public int getIdComida() {
@@ -77,19 +80,19 @@ public class ComidaDTO {
         this.comiFavo = comiFavo;
     }
 
-    public int getUsuarioId() {
-        return usuarioId;
+    public Usuarios getUsuario() {
+        return usuario;
     }
 
-    public void setUsuarioId(int usuarioId) {
-        this.usuarioId = usuarioId;
+    public void setUsuario(Usuarios usuario) {
+        this.usuario = usuario;
     }
 
-    public int getTipoComidaId() {
-        return tipoComidaId;
+    public Tipo_comida getTipoComida() {
+        return tipoComida;
     }
 
-    public void setTipoComidaId(int tipoComidaId) {
-        this.tipoComidaId = tipoComidaId;
+    public void setTipoComida(Tipo_comida tipoComida) {
+        this.tipoComida = tipoComida;
     }
 }
