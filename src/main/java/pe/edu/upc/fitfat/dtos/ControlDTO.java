@@ -1,5 +1,8 @@
 package pe.edu.upc.fitfat.dtos;
 
+import pe.edu.upc.fitfat.entities.Dieta;
+import pe.edu.upc.fitfat.entities.Usuarios;
+
 import java.math.BigDecimal;
 import java.sql.Date;
 
@@ -9,8 +12,8 @@ public class ControlDTO {
     private BigDecimal talla;
     private int edad;
     private String genero;
-    private int dietaIdDieta;
-    private int usuarioId;
+    private Dieta dieta;
+    private Usuarios usuario;
     private Date fecha;
 
 
@@ -54,20 +57,20 @@ public class ControlDTO {
         this.genero = genero;
     }
 
-    public int getDietaIdDieta() {
-        return dietaIdDieta;
+    public Dieta getDieta() {
+        return dieta;
     }
 
-    public void setDietaIdDieta(int dietaIdDieta) {
-        this.dietaIdDieta = dietaIdDieta;
+    public void setDieta(Dieta dieta) {
+        this.dieta = dieta;
     }
 
-    public int getUsuarioId() {
-        return usuarioId;
+    public Usuarios getUsuario() {
+        return usuario;
     }
 
-    public void setUsuarioId(int usuarioId) {
-        this.usuarioId = usuarioId;
+    public void setUsuario(Usuarios usuario) {
+        this.usuario = usuario;
     }
 
     public Date getFecha() {
